@@ -1,0 +1,94 @@
+/* Cabecera - Siempre es fija */
+.header {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    height: 70px;
+    margin-top: 0;
+    margin-bottom: 1%;
+    background-color: #FFF;
+    border-bottom: 1px solid #dfdcdc;
+}
+
+/* Linea de separación */
+
+hr {
+    width: 80%;
+    margin: 8px auto;
+    border-top: 2px solid #dee2e6;
+}
+
+.menu {
+    display: flex;
+    margin: 0% 14%;
+    flex-direction: row-reverse;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: rgba(255, 255, 255, 0.8);
+}
+
+.logo {
+    width: 20%;
+    margin-top: 1px;
+}
+
+.logo a {
+    color: #FFF;
+    font-size: 30px;
+}
+
+.nav {
+    padding: 0.6em;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav ul li {
+    margin-left: 0.5em;
+}
+
+.nav,
+.login,
+.create{
+    color: #FFF;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    padding: 1.3em;
+    letter-spacing: 2px;
+    border-radius: 2px;
+    background-color: green;
+    font-weight: 600;
+}
+
+.login{
+    margin-right: 3px !important;
+}
+
+.login:hover{
+    color: black;
+}
+
+.create:hover{
+    color: black;
+}
+
+@media (max-width: 767px) {
+    .menu {
+        margin: 0% 0%;
+    }
+
+    .login {
+        margin-right: 1px;
+    }
+
+    .nav,
+    .login,
+    .create{
+        padding: 1em;
+    }
+}

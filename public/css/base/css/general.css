@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    list-style: none;
+}
+
+body{
+    background-color: rgba(250, 245, 245, 0.6) !important;
+}
+
+.content {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920px;
+}
+
+/* Aquí comienza la sección */
+.section {
+    min-height: calc(100vh - 185px);
+}
+
+/* Aquí termina la sección */
+
+/* Imagen del autor y de perfil */
+.img-author,
+.img-profile {
+    width: 58px;
+    margin-top: 3px;
+    border-radius: 3px;
+    height: 43px;
+}
+
+.img-profile-admi {
+    width: 200px;
+    margin-top: 3px;
+    border-radius: 3px;
+    height: 200px;
+}
+
+.text-primary {
+    text-align: center;
+    font-size: 2.1em;
+    margin: 1%;
+}
+
+.text-primary h2{
+    color: black !important;
+    font-weight: bold !important;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/* Aquí comienza el slogan */
+.slogan {
+    display: flex;
+    flex-wrap: wrap;
+    width: 48%;
+    margin: 1% auto;
+}
+
+.column1 {
+    flex: 0 0 30%;
+    max-width: 25%;
+    margin-top: 6px;
+}
+
+.column1 h2 {
+    font-size: 2.2em;
+    color: #343a40;
+    text-align: center;
+    font-weight: bold;
+}
+
+.column2 {
+    flex: 0 0 70%;
+    max-width: 70%;
+}
+
+.column2 p {
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/* Aquí termina el slogan */
+
+@media (max-width: 1440px) {
+
+    .section {
+        min-height: calc(100vh - 163px);
+    }
+
+    .slogan {
+        width: 60%;
+        margin: 15px auto;
+    }
+
+
+}
+
+@media (min-width: 1366px) and (max-width: 1399px) {
+    .text-primary {
+        font-size: 1.7em;
+    }
+
+    .slogan {
+        width: 67%;
+        margin: 25px auto;
+    }
+
+}
+
+@media (min-width: 1280px) and (max-width: 1365px) {
+
+    .section {
+        min-height: calc(100vh - 160px);
+    }
+
+    .text-primary{
+        font-size: 1.6em;
+    }
+
+    .slogan {
+        width: 66%;
+    }
+
+    .slogan .column1 h2 {
+        font-size: 2em;
+    }
+
+    .slogan .column2 p {
+        font-size: 1em;
+    }
+
+}
+
+/* 1024px * 600 */
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .text-primary {
+        font-size: 1.5em;
+    }
+
+    .section {
+        min-height: calc(100vh - 151px);
+    }
+
+    .slogan {
+        width: 75%;
+        margin: 15px auto;
+    }
+
+    .slogan .column1 h2{
+        font-size: 2em;
+    }
+
+    .slogan .column2 p{
+        font-size: 1em;
+    }
+}

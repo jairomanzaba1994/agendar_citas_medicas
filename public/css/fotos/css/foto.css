@@ -1,0 +1,28 @@
+.img-boton{
+    height: 65px;
+    width: 40px;
+}
+
+.img-panel{
+    height: 390px;
+    width: 350px;
+}
+
+.no-border{
+    border:none;
+}
+
+.button-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+@media (max-width: 767px) {
+    .img-panel{
+        width: 350px;
+        height: auto;
+    }
+}
